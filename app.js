@@ -23,6 +23,14 @@ app.use(
       'https://sibusky.github.io/proelectro',
       'https://sibusky.github.io/',
       'https://sibusky.github.io/',
+      'https://электрик-вологда.рф',
+      'http://электрик-вологда.рф',
+      'https://электрик-вологда.рф',
+      'http://81.163.22.131/',
+      'https://xn----8sbfefcvpbgg9abv3a6o.xn--p1ai/',
+      'http://xn----8sbfefcvpbgg9abv3a6o.xn--p1ai/',
+      'https://xn----8sbfefcvpbgg9abv3a6o.xn--p1ai',
+      'http://xn----8sbfefcvpbgg9abv3a6o.xn--p1ai',
     ],
     methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
   }),
@@ -33,8 +41,6 @@ app.post('/submit', upload.single('file'), (req, res) => {
   const {
     website, name, email, phone, message,
   } = req.body;
-
-  console.log(req.file);
 
   const attachments = [];
   if (req.file) {
