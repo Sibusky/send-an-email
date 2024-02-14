@@ -36,6 +36,9 @@ app.use(
   }),
 );
 
+// get request to check if server is ready
+app.get('/', (req, res) => res.send('server is ready'));
+
 // Route to handle form submission
 app.post('/submit', upload.single('file'), (req, res) => {
   const {
