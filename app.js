@@ -31,6 +31,7 @@ app.use(
       'http://xn----8sbfefcvpbgg9abv3a6o.xn--p1ai/',
       'https://xn----8sbfefcvpbgg9abv3a6o.xn--p1ai',
       'http://xn----8sbfefcvpbgg9abv3a6o.xn--p1ai',
+      'https://proelectro.netlify.app/',
     ],
     methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
   }),
